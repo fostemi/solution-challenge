@@ -1,4 +1,4 @@
-package com.example.hungr.volunteering
+package com.example.hungr.volunteering.database
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
@@ -14,11 +14,15 @@ data class VolunteeringOpportunities(
     @ColumnInfo(name = "description")
     val description: String = "",
     @ColumnInfo(name = "startTime")
-    val startTime: Time = Time.valueOf("12:00"),
+    val startTime: Time = Time.valueOf("12:00:00"),
     @ColumnInfo(name = "endTime")
-    val endTime: Time = Time.valueOf("12:00"),
+    val endTime: Time = Time.valueOf("12:00:00"),
     @ColumnInfo(name = "responsibilities")
     val responsibilities: String = ""
 ) {
+    fun findById(id: Int): VolunteeringOpportunities {
+        //TODO: query database
+        return VolunteeringOpportunities()
+    }
     //TODO:add location
 }

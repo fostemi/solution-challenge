@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">HUNGR</string>
+    <string name="foodbank_fragment">Foodbank Fragment</string>
+    <string name="volunteering_fragment">Volunteering Fragment</string>
 </resources>

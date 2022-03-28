@@ -4,19 +4,19 @@
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity">
+
     <TableLayout
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#ldb995"
-        tools:ignore="InvalidId" />
+        android:background="@color/black" />
+
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tabLayout"
+        android:layout_below="@id/tabLayout"
         android:layout_centerInParent="true"
-        android:layout_marginBottom="0dp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:ignore="InvalidId" />
+        android:layout_marginTop="100dp"
+        tools:layout_editor_absoluteX="8dp" />
 </RelativeLayout>
